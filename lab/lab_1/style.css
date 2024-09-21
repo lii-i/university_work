@@ -1,0 +1,89 @@
+header{
+    z-index: 1000;
+}
+.vertical-menu{
+    width: 66px;
+    top:42px;
+    height: 100vh;
+    font-size: 14px;
+}
+.poisk{
+    background: none;
+    border: 0cap;
+}
+.poisk img{
+    width: 100%; /* Занимать всю ширину кнопки */
+    height: 100%; /* Занимать всю высоту кнопки */
+    object-fit: cover; /* Масштабирование изображения для покрытия всей кнопки */
+}
+.menu_button{
+    position: relative;
+    right:5px;
+    background: none;
+    border: 0cap;
+}
+.text_menu{
+    position: relative;
+    right:5px;
+}
+main{
+    width: 93%;
+    top:60px;
+    left:30px;
+}
+.element_anime{
+    position: relative;
+    top:20px;
+}
+.scroll_button{
+    background: none;
+    border: 0cap;
+}
+.scroll_button img {
+    width: 100%; /* Занимать всю ширину кнопки */
+    height: 100%; /* Занимать всю высоту кнопки */
+    object-fit: cover; /* Масштабирование изображения для покрытия всей кнопки */
+}
+.scroll_button span {
+    display: block;
+    margin-top: 10px;
+    font-size: 16px;
+}
+.main_button{
+    position: relative;
+    left:25px;
+    background: none;
+    border: 0cap;
+}
+.main_button img{
+    width: 100%; /* Занимать всю ширину кнопки */
+    height: 100%; /* Занимать всю высоту кнопки */
+    object-fit: cover; /* Масштабирование изображения для покрытия всей кнопки */
+}
+.main_button span{
+    display: block;
+    margin-top: 10px;
+    font-size: 16px;
+}
+.element_left{
+    position: relative;
+    left:66px;
+}
+span {
+    white-space: nowrap; /* Запрещает перенос текста на новую строку */
+    overflow: hidden; /* Скрывает текст, который не помещается */
+    text-overflow: ellipsis; /* Добавляет многоточие в конце обрезанного текста */
+}
+.scrollable-area {
+    display: flex; /* Используем Flexbox для горизонтального расположения */
+    height: 300px; /* Устанавливаем фиксированную высоту контейнера */
+    width: 100%; /* Ширина 100% родительского контейнера */
+    overflow-y: auto; 
+}
+.janr{
+    position: absolute;
+    z-index: 1;
+    width: 360px;
+    max-height: 200px; /* задайте желаемую высоту */
+    overflow-y: auto; /* добавляет вертикальную полосу прокрутки */
+}

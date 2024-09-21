@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Повесть о конце света</title>
+       <meta name="viewport" content="width=device-width, initial-scale=1">
+       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+       <link rel="stylesheet" href="povest.css">
+    </head>
+    <body>
+        <header class = "container-fluid position-fixed bg-success">
+            <div class = "row"> 
+                <div class = "col-lg-12 ms-4 text-center">
+                    <h1>MAIN</h1>
+                </div>
+            </div>
+        </header>
+        <menu class = "container position-fixed bg-primary vertical-menu">
+                <div class = "row">
+                    <div class = "col-lg-12">
+                        <figure>
+                            <a href = "http://127.0.0.1:8080/" class = "menu_button">
+                                <img src="menu_main.png" alt="главное меню">
+                            </a>
+                            <figcaption class = "text_menu">Главное меню</figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <div class = "row">
+                    <div class = "col-lg-12">
+                        <figure>
+                            <a href="http://127.0.0.1:8080/films" class = "menu_button">
+                                <img src="films.png" alt="фильмы">
+                            </a>
+                            <figcaption class = "text_menu">Фильмы</figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <div class = "row">
+                    <div class = "col-lg-12">
+                        <figure>
+                            <a href = "http://127.0.0.1:8080/serials" class = "menu_button">
+                                <img src="serials.png" alt="сериалы">
+                            </a>
+                            <figcaption class = "text_menu">Сериалы</figcaption>
+                        </figure>
+                    </div>
+                </div>
+        </menu>
+        <main class = "container position-relative">
+            <form class="container" action="http://127.0.0.1:8080/search" method="post">
+                <div class="row">
+                  <div class="col-lg-4 offset-lg-4">
+                    <input type="search" name="query" style="width: 300px">
+                  </div>
+                  <div class="col-lg-1">
+                    <input type="submit" class="poisk">
+                  </div>
+                </div>
+              </form>
+            <div class = "row mt-3">
+                <div class = "col-lg-4 ms-5 text-center">
+                    <img class = "main_img" src="povest.jpg" alt="povest">
+                </div>
+                <div class = "col-lg-7">
+                    <div class = "row">
+                        <div class = "col-lg-1 text-center">
+                            <img src="star.png" alt="star">
+                        </div>
+                        <div class = "col-lg-1">
+                            <h4>8,1</h4>
+                        </div>
+                    </div>
+                    <div class = "row">
+                        <div class = "col-lg-12 text-center">
+                            <h3 class = "ms-5">Повесть о конце света</h3>
+                        </div>
+                    </div>
+                    <div class = "row mt-2">
+                        <div class = "col-lg-3">
+                            <h7>Тип</h7>
+                        </div>
+                        <div class = "col-lg-7 text-center">
+                            <h7>ONA</h7>
+                        </div>
+                    </div>
+                    <div class = "row mt-2">
+                        <div class = "col-lg-3">
+                            <h7>Кол-во серий</h7>
+                        </div>
+                        <div class = "col-lg-7 text-center">
+                            <h7 class = "mt-1">12</h7>
+                        </div>
+                    </div>
+                    <div class = "row mt-2">
+                        <div class = "col-lg-3">
+                            <h7>Рейтинг MPAA</h7>
+                        </div>
+                        <div class = "col-lg-7 text-center">
+                            <a href="http://127.0.0.1:8080/PG-13">
+                                <h7>R+</h7>
+                            </a>
+                        </div>
+                    </div>
+                    <div class = "row mt-2">
+                        <div class = "col-lg-3">
+                            <h7>Статус</h7>
+                        </div>
+                        <div class = "col-lg-7 text-center">
+                            <a href="http://127.0.0.1:8080/ongoing">
+                                <h7>Онгоинг</h7>
+                            </a>
+                        </div>
+                    </div>
+                    <div class = "row mt-2">
+                        <div class = "col-lg-1">
+                            <h7>Жанр</h7>
+                        </div>
+                        <div class = "col-lg-11 text-center">
+                            <div class = "row">
+                                <div class = "col-lg-2">
+                                    <a href="http://127.0.0.1:8080/Drama bg-primary">
+                                        <h7>Драма</h7>
+                                    </a>
+                                </div>
+                                <div class = "col-lg-3">
+                                    <a href="http://127.0.0.1:8080/Sverhestestvennoe">
+                                        <h7>Сверхъестесвенное</h7>
+                                    </a>
+                                </div>
+                                <div class = "col-lg-3">
+                                    <a href="http://127.0.0.1:8080/Super_sila">
+                                        <h7>Супер сила</h7>
+                                    </a>
+                                </div>
+                                <div class = "col-lg-2">
+                                    <a href="http://127.0.0.1:8080/Seynen">
+                                        <h7>Сэйнен</h7>
+                                    </a>
+                                </div>
+                                <div class = "col-lg-2">
+                                    <a href="http://127.0.0.1:8080/Fentasy">
+                                        <h7>Фэнтези</h7>
+                                    </a>
+                                </div>
+                                <div class = "col-lg-2">
+                                    <a href="http://127.0.0.1:8080/Ecshen">
+                                        <h7>Экшен</h7>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class = "row mt-2">
+                        <div class = "col-lg-1">
+                            <h7>Тег</h7>
+                        </div>
+                        <div class = "col-lg-11 text-center">
+                            <div class="row">
+                                <div class = "col-lg-2">
+                                    <a href="http://127.0.0.1:8080/Gods">
+                                        <h7>Боги</h7>
+                                    </a>
+                                </div>
+                                <div class = "col-lg-3">
+                                    <a href="http://127.0.0.1:8080/Apocalipsis">
+                                        <h7>Апокалипсис</h7>
+                                    </a>
+                                </div>
+                                <div class = "col-lg-3">
+                                    <a href="http://127.0.0.1:8080/GG_man">
+                                        <h7>ГГ мужчина</h7>
+                                    </a>
+                                </div>
+                                <div class = "col-lg-3">
+                                    <a href="http://127.0.0.1:8080/GG_woman">
+                                        <h7>ГГ женщина</h7>
+                                    </a>
+                                </div>
+                                <div class = "col-lg-3">
+                                    <a href="http://127.0.0.1:8080/Legends_weapon">
+                                        <h7>Легенд. оружие</h7>
+                                    </a>
+                                </div>
+                                <div class = "col-lg-3">
+                                    <a href="http://127.0.0.1:8080/Skills">
+                                        <h7>Способности</h7>
+                                    </a>
+                                </div>
+                                <div class = "col-lg-3">
+                                    <a href="http://127.0.0.1:8080/Save_world">
+                                        <h7>Спасение мира</h7>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class = "row mt-2">
+                        <div class = "col-lg-3">
+                            <h7>Первоисточник</h7>
+                        </div>
+                        <div class = "col-lg-7 text-center">
+                            <h7>Манга</h7>
+                        </div>
+                    </div>
+                    <div class = "row mt-2">
+                        <div class = "col-lg-3 ">
+                            <h7>Сезон</h7>
+                        </div>
+                        <div class = "col-lg-7 text-center">
+                            <h7>Лето 2021</h7>
+                        </div>
+                    </div>
+                    <div class = "row mt-2">
+                        <div class = "col-lg-3">
+                            <h7>Выпуск</h7>
+                        </div>
+                        <div class = "col-lg-7 text-center">
+                            <h7>С 17 июня 2021</h7>
+                        </div>
+                    </div>
+                    <div class = "row mt-2">
+                        <div class = "col-lg-3">
+                            <h7>Студия</h7>
+                        </div>
+                        <div class = "col-lg-7 text-center">
+                            <a href="http://127.0.0.1:8080/Dogakobo">
+                                <h7>Graphinica</h7>
+                            </a>
+                        </div>
+                    </div>
+                    <div class = "row mt-3">
+                        <div class = "col-lg-3 ">
+                            <h7>Главные герои</h7>
+                        </div>
+                        <div class = "col-lg-7  text-center">
+                            <div class = "row">
+                                <div class = "col-lg-12">
+                                    <a href="https://record-of-ragnarok.fandom.com/wiki/Adam">
+                                        <h7>Адам</h7>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class = "row">
+                                <div class = "col-lg-12">
+                                    <a href="https://record-of-ragnarok.fandom.com/wiki/Thor">
+                                        <h7>Тор</h7>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class = "row">
+                                <div class = "col-lg-12">
+                                    <a href="https://record-of-ragnarok.fandom.com/wiki/Shiva">
+                                        <h7>Шива</h7>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class = "row">
+                                <div class = "col-lg-12">
+                                    <a href="https://translated.turbopages.org/proxy_u/en-ru.ru.6a85b259-66a8cf48-af03211d-74722d776562/https/record-of-ragnarok.fandom.com/wiki/Kojiro_Sasaki">
+                                        <h7>Сасаки Кодзиро</h7>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class = "row">
+                                <div class = "col-lg-12">
+                                    <a href="https://record-of-ragnarok.fandom.com/wiki/Brunhilde">
+                                        <h7>Брунхильда</h7>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class = "row">
+                                <div class = "col-lg-12">
+                                    <a href="https://record-of-ragnarok.fandom.com/wiki/Poseidon">
+                                        <h7>Посейдон</h7>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class = "row">
+                <div class = "col-lg-12 mt-3">
+                    <h7>Боги решают стереть людей с лица Земли. У человечества есть один-единственный шанс доказать, что оно достойно жить. Настало время битвы Рагнарёк.</h7>
+                </div>
+            </div>
+            <div class = "row mt-3">
+                <div class = "col-lg-12 text-center bg-secondary">
+                    <h3>Связанное</h3>
+                </div>
+            </div>
+            <div class = "row bg-secondary">
+                <div class = "col-lg-2 text-center ms-5">
+                    <a href="https://mangalib.me/shuumatsu-no-walkure-shuumatsu-no-valkyrie?section=info">
+                        <img class = "dop_img" src="povest_manga.jpg" alt="povest_manga">
+                        <span>Повесть о конце света</span>
+                    </a>
+                </div>
+                <div class = "col-lg-2 text-center ms-5">
+                    <a href="https://mangalib.me/shuumatsu-no-walkure-shuumatsu-no-valkyrie?section=info">
+                        <img class = "dop_img" src="povest_o_konce_sveta-2.jpg" alt="povest-2">
+                        <span>Повесть о конце света 2</span>
+                    </a>
+                </div>
+            </div>
+            <div class = "row mt-3">
+                <div class = "col-lg-12 text-center bg-dark">
+                    <iframe src="//aniqit.com/serial/35277/61d07c3682d98c7aec5d7a0e7805592c/720p" width="900" height="450" frameborder="0" allowfullscreen allow="autoplay *; fullscreen *"></iframe>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>

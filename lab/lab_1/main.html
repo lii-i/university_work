@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>MAIN</title>
+       <meta name="viewport" content="width=device-width, initial-scale=1">
+       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+       <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header class = "container-fluid position-fixed bg-success">
+            <div class = "row"> 
+                <div class = "col-lg-12 text-center">
+                    <h1>MAIN</h1>
+                </div>
+            </div>
+        </header>
+        <menu class = "container position-fixed bg-primary vertical-menu">
+                <div class = "row">
+                    <div class = "col-lg-12">
+                        <figure>
+                            <a href = "http://127.0.0.1:8080/" class = "menu_button">
+                                <img src="menu_main.png" alt="главное меню">
+                            </a>
+                            <figcaption class = "text_menu">Главное меню</figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <div class = "row">
+                    <div class = "col-lg-12">
+                        <figure>
+                            <a href="http://127.0.0.1:8080/films" class = "menu_button">
+                                <img src="films.png" alt="фильмы">
+                            </a>
+                            <figcaption class = "text_menu">Фильмы</figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <div class = "row">
+                    <div class = "col-lg-12">
+                        <figure>
+                            <a href = "http://127.0.0.1:8080/serials" class = "menu_button">
+                                <img src="serials.png" alt="сериалы">
+                            </a>
+                            <figcaption style="position: relative; right: 7px;">Сериалы</figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <div class = "row">
+                    <div class = "col-lg-12">
+                        <figure>
+                            <a href = "http://127.0.0.1:8080/login" class = "menu_button">
+                                <img src="login.png" alt="login">
+                            </a>
+                            <figcaption class = "text-center">Войти</figcaption>
+                        </figure>
+                    </div>
+                </div>
+        </menu>
+        <main class = "container position-relative">
+            <form class="container" action="http://127.0.0.1:8080/search" method="post">
+                <div class="row">
+                  <div class="col-lg-4 offset-lg-4">
+                    <input type="search" name="query" style="width: 300px">
+                  </div>
+                  <div class="col-lg-1">
+                    <input type="submit" class="poisk">
+                  </div>
+                </div>
+              </form>
+            <div class = "row mt-3">
+                <div class="col-lg-6 element_left">
+                    <h2 >Сегодня выходят</h1>
+                </div>
+            </div>
+            <div class = "row">
+                <div class = "col-lg-11 element_left">
+                    <div class = "scrollable-area">
+                        <div class = "row">
+                            <div class="col-lg-2 text-center">
+                                <a href="http://127.0.0.1:8080/povest_o_konce_sveta" class = "scroll_button">
+                                    <img src="povest_o_konce_sveta/povest.jpg" alt="povest">
+                                    <span>Повесть о конце света</span>
+                                </a>
+                            </div>
+                            <div class="col-lg-2 text-center">
+                                <a href="http://127.0.0.1:8080/bashnya_boga" class = "scroll_button">
+                                    <img src="bashnya_boga/bashnya.jpg" alt="bashnya">
+                                    <span>Башня бога 2</span>
+                                </a>
+                            </div>
+                            <div class="col-lg-2 text-center">
+                                <a href="http://127.0.0.1:8080/Alya-cocetnichayet" class = "scroll_button">
+                                    <img src="Alya/Alya.jpg" alt="alya">
+                                    <span>Аля иногда кокетничает по русски</span>
+                                </a>
+                            </div>
+                            <div class="col-lg-2 text-center">
+                                <a href="http://127.0.0.1:8080/young_lord" class = "scroll_button">
+                                    <img src="young_lord/young_lord.jpg" alt="young_lord">
+                                    <span>Юный лорд - мастер побега</span>
+                                </a>
+                            </div>
+                            <div class="col-lg-2 text-center">
+                                <a href="http://127.0.0.1:8080/slichkom-mnogo-proigravshih-geroin" class = "scroll_button">
+                                    <img src="slichkom-mnogo-proigravshih-geroin/slichkom-mnogo-proigravshih-geroin.jpg" alt="slichkom-mnogo-proigravshih-geroin">
+                                    <span>Слишком много проигравших героинь</span>
+                                </a>
+                            </div>
+                            <div class="col-lg-2 text-center">
+                                <a href="http://127.0.0.1:8080/mech-i-zhezl-vistorii" class = "scroll_button">
+                                    <img src="mech-i-zhezl-vistorii/mech-i-zhezl-vistorii.jpg" alt="mech-i-zhezl-vistorii">
+                                    <span>Меч и жезл Вистории</span>
+                                </a>
+                            </div>
+                            <div class="col-lg-2 mt-5 text-center">
+                                <a href="http://127.0.0.1:8080/terrasa-kafe-bogin-2" class = "scroll_button">
+                                    <img src="terrasa-kafe-bogin-2/terrasa-kafe-bogin-2.jpg" alt="terrasa-kafe-bogin-2">
+                                    <span>Терраса кафе богинь 2</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class = "row mt-3">
+                <div class = "col-lg-8 offset-lg-2 bg-secondary">
+                    <div class = "row">
+                        <div class = "col-lg-12 bg-secondary">
+                            <h4 class="text-center">Гибкий поиск</h4>
+                        </div>
+                    </div>
+                    <div class = "row">
+                        <div class = "col-lg-6 mb-2">
+                            <div class="accordion janr">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseJanr" aria-expanded="false" aria-controls="collapseJanr">
+                                        Выберите жанр
+                                      </button>
+                                    </h2>
+                                    <div id="collapseJanr" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                      <div class="accordion-body">
+                                        <div class = "row">
+                                            <div class = "col-lg-6">
+                                                <input type="checkbox"> Боевые ис.
+                                            </div>
+                                            <div class = "col-lg-6">
+                                                <input type="checkbox"> Вампиры
+                                            </div>
+                                        </div>
+                                        <div class = "row">
+                                            <div class = "col-lg-6">
+                                                <input type="checkbox"> Гарем
+                                            </div>
+                                            <div class = "col-lg-6">
+                                                <input type="checkbox"> Демоны
+                                            </div>
+                                        </div>
+                                        <div class = "row">
+                                            <div class = "col-lg-6">
+                                                <input type="checkbox"> Детектив
+                                            </div>
+                                            <div class = "col-lg-6">
+                                                <input type="checkbox"> Дзёсей
+                                            </div>
+                                        </div>
+                                        <div class = "row">
+                                            <div class = "col-lg-6">
+                                                <input type="checkbox"> Драма
+                                            </div>
+                                            <div class = "col-lg-6">
+                                                <input type="checkbox"> Игры
+                                            </div>
+                                        </div>
+                                        <div class = "row">
+                                            <div class = "col-lg-6">
+                                                <input type="checkbox"> Исекай
+                                            </div>
+                                            <div class = "col-lg-6">
+                                                <input type="checkbox"> История
+                                            </div>
+                                        </div>
+                                        <div class = "row">
+                                            <div class = "col-lg-6">
+                                                <input type="checkbox"> Киберпанк
+                                            </div>
+                                            <div class = "col-lg-6">
+                                                <input type="checkbox"> Комедия
+                                            </div>
+                                        </div>
+                                        <div class = "row">
+                                            <div class = "col-lg-6">
+                                                <input type="checkbox"> Магия
+                                            </div>
+                                            <div class = "col-lg-6">
+                                                <input type="checkbox"> Меха
+                                            </div>
+                                        </div>
+                                        <div class = "row">
+                                            <div class = "col-lg-6">
+                                                <input type="checkbox"> Мистика
+                                            </div>
+                                            <div class = "col-lg-6">
+                                                <input type="checkbox"> Музыка
+                                            </div>
+                                        </div>
+                                        <div class = "row">
+                                            <div class = "col-lg-6">
+                                                <input type="checkbox"> Пародия
+                                            </div>
+                                            <div class = "col-lg-6">
+                                                <input type="checkbox"> Повседневность
+                                            </div>
+                                        </div>
+                                        <div class = "row">
+                                            <div class = "col-lg-6">
+                                                <input type="checkbox"> Приключения
+                                            </div>
+                                            <div class = "col-lg-6">
+                                                <input type="checkbox"> Психологическое
+                                            </div>
+                                        </div>
+                                        <div class = "row">
+                                            <div class = "col-lg-6">
+                                                <input type="checkbox"> Романтика
+                                            </div>
+                                            <div class = "col-lg-6">
+                                                <input type="checkbox"> Сверхъестесвенное
+                                            </div>
+                                        </div>
+                                        <div class = "row">
+                                            <div class = "col-lg-6">
+                                                <input type="checkbox"> Сёдзе
+                                            </div>
+                                            <div class = "col-lg-6">
+                                                <input type="checkbox"> Сёдзе - ай
+                                            </div>
+                                        </div>
+                                        <div class = "row">
+                                            <div class = "col-lg-6">
+                                                <input type="checkbox"> Сейнен
+                                            </div>
+                                            <div class = "col-lg-6">
+                                                <input type="checkbox"> Сёнен
+                                            </div>
+                                        </div>
+                                        <div class = "row">
+                                            <div class = "col-lg-6">
+                                                <input type="checkbox"> Сёнен - ай
+                                            </div>
+                                            <div class = "col-lg-6">
+                                                <input type="checkbox"> Спорт
+                                            </div>
+                                        </div>
+                                        <div class = "row">
+                                            <div class = "col-lg-6">
+                                                <input type="checkbox"> Супер сила
+                                            </div>
+                                            <div class = "col-lg-6">
+                                                <input type="checkbox"> Триллер
+                                            </div>
+                                        </div>
+                                        <div class = "row">
+                                            <div class = "col-lg-6">
+                                                <input type="checkbox"> Ужасы
+                                            </div>
+                                            <div class = "col-lg-6">
+                                                <input type="checkbox"> Фантастика
+                                            </div>
+                                        </div>
+                                        <div class = "row">
+                                            <div class = "col-lg-6">
+                                                <input type="checkbox"> Фэнтези
+                                            </div>
+                                            <div class = "col-lg-6">
+                                                <input type="checkbox"> Школа
+                                            </div>
+                                        </div>
+                                        <div class = "row">
+                                            <div class = "col-lg-6">
+                                                <input type="checkbox"> Экшен
+                                            </div>
+                                            <div class = "col-lg-6">
+                                                <input type="checkbox"> Этти
+                                            </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                            </div>
+                        </div>
+                        <div class = "col-lg-6">
+                            <div class="accordion janr">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTeg" aria-expanded="false" aria-controls="collapseTeg">
+                                        Выберите Тег
+                                      </button>
+                                    </h2>
+                                    <div id="collapseTeg" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                      <div class="accordion-body">
+                                        <div class = "row">
+                                            <div class = "col-lg-6">
+                                                <input type="checkbox"> Азартные игры
+                                            </div>
+                                            <div class = "col-lg-6">
+                                                <input type="checkbox"> Алхимия
+                                            </div>
+                                        </div>
+                                        <div class = "row">
+                                            <div class = "col-lg-6">
+                                                <input type="checkbox"> Амнезия
+                                            </div>
+                                            <div class = "col-lg-6">
+                                                <input type="checkbox"> Ангелы
+                                            </div>
+                                        </div>
+                                        <div class = "row">
+                                            <div class = "col-lg-6">
+                                                <input type="checkbox"> Антигерой
+                                            </div>
+                                            <div class = "col-lg-6">
+                                                <input type="checkbox"> Антиутопия
+                                            </div>
+                                        </div>
+                                        <div class = "row">
+                                            <div class = "col-lg-6">
+                                                <input type="checkbox"> Апокалипсис
+                                            </div>
+                                            <div class = "col-lg-6">
+                                                <input type="checkbox"> Армия
+                                            </div>
+                                        </div>
+                                        <div class = "row">
+                                            <div class = "col-lg-6">
+                                                <input type="checkbox"> Артефакты
+                                            </div>
+                                            <div class = "col-lg-6">
+                                                <input type="checkbox"> Боги
+                                            </div>
+                                        </div>
+                                        <div class = "row">
+                                            <div class = "col-lg-6">
+                                                <input type="checkbox"> Бои на мечах
+                                            </div>
+                                            <div class = "col-lg-6">
+                                                <input type="checkbox"> Борьба за вл.
+                                            </div>
+                                        </div>
+                                        <div class = "row">
+                                            <div class = "col-lg-6">
+                                                <input type="checkbox"> Брат и сестра
+                                            </div>
+                                            <div class = "col-lg-6">
+                                                <input type="checkbox"> Будущее
+                                            </div>
+                                        </div>
+                                        <div class = "row">
+                                            <div class = "col-lg-6">
+                                                <input type="checkbox"> Ведьма
+                                            </div>
+                                            <div class = "col-lg-6">
+                                                <input type="checkbox"> Вестерн
+                                            </div>
+                                        </div>
+                                        <div class = "row">
+                                            <div class = "col-lg-6">
+                                                <input type="checkbox"> Видеоигры
+                                            </div>
+                                            <div class = "col-lg-6">
+                                                <input type="checkbox"> Владыка дем.
+                                            </div>
+                                        </div>
+                                        <div class = "row">
+                                            <div class = "col-lg-6">
+                                                <input type="checkbox"> Военные
+                                            </div>
+                                            <div class = "col-lg-6">
+                                                <input type="checkbox"> Война
+                                            </div>
+                                        </div>
+                                        <div class = "row">
+                                            <div class = "col-lg-6">
+                                                <input type="checkbox"> Маги
+                                            </div>
+                                            <div class = "col-lg-6">
+                                                <input type="checkbox"> Маг. существа.
+                                            </div>
+                                        </div>
+                                        <div class = "row">
+                                            <div class = "col-lg-6">
+                                                <input type="checkbox"> Из другого мира
+                                            </div>
+                                            <div class = "col-lg-6">
+                                                <input type="checkbox"> Выживание
+                                            </div>
+                                        </div>
+                                        <div class = "row">
+                                            <div class = "col-lg-6">
+                                                <input type="checkbox"> ГГ женщина
+                                            </div>
+                                            <div class = "col-lg-6">
+                                                <input type="checkbox"> ГГ мужчина
+                                            </div>
+                                        </div>
+                                        <div class = "row">
+                                            <div class = "col-lg-6">
+                                                <input type="checkbox"> ГГ имба
+                                            </div>
+                                            <div class = "col-lg-6">
+                                                <input type="checkbox"> Геймеры
+                                            </div>
+                                        </div>
+                                        <div class = "row">
+                                            <div class = "col-lg-6">
+                                                <input type="checkbox"> Гильдии
+                                            </div>
+                                            <div class = "col-lg-6">
+                                                <input type="checkbox"> Глупый ГГ
+                                            </div>
+                                        </div>
+                                        <div class = "row">
+                                            <div class = "col-lg-6">
+                                                <input type="checkbox"> Гоблины
+                                            </div>
+                                            <div class = "col-lg-6">
+                                                <input type="checkbox"> Горничные
+                                            </div>
+                                        </div>
+                                        <div class = "row">
+                                            <div class = "col-lg-6">
+                                                <input type="checkbox"> Гяру
+                                            </div>
+                                            <div class = "col-lg-6">
+                                                <input type="checkbox"> Демоны
+                                            </div>
+                                        </div>
+                                        <div class = "row">
+                                            <div class = "col-lg-6">
+                                                <input type="checkbox"> Драконы
+                                            </div>
+                                            <div class = "col-lg-6">
+                                                <input type="checkbox"> Дружба
+                                            </div>
+                                        </div>
+                                        <div class = "row">
+                                            <div class = "col-lg-6">
+                                                <input type="checkbox"> Жестокий мир
+                                            </div>
+                                            <div class = "col-lg-6">
+                                                <input type="checkbox"> Компаньон зверь
+                                            </div>
+                                        </div>
+                                        <div class = "row">
+                                            <div class = "col-lg-6">
+                                                <input type="checkbox"> Завоевание мира
+                                            </div>
+                                            <div class = "col-lg-6">
+                                                <input type="checkbox"> Зверолюди
+                                            </div>
+                                        </div>
+                                        <div class = "row">
+                                            <div class = "col-lg-6">
+                                                <input type="checkbox"> Злые духи
+                                            </div>
+                                            <div class = "col-lg-6">
+                                                <input type="checkbox"> Зомби
+                                            </div>
+                                        </div>
+                                        <div class = "row">
+                                            <div class = "col-lg-6">
+                                                <input type="checkbox"> Игровые элементы
+                                            </div>
+                                            <div class = "col-lg-6">
+                                                <input type="checkbox"> Империи
+                                            </div>
+                                        </div>
+                                        <div class = "row">
+                                            <div class = "col-lg-6">
+                                                <input type="checkbox"> Квесты
+                                            </div>
+                                            <div class = "col-lg-6">
+                                                <input type="checkbox"> Космос
+                                            </div>
+                                        </div>
+                                        <div class = "row">
+                                            <div class = "col-lg-6">
+                                                <input type="checkbox"> Кулинария
+                                            </div>
+                                            <div class = "col-lg-6">
+                                                <input type="checkbox"> Культивация
+                                            </div>
+                                        </div>
+                                        <div class = "row">
+                                            <div class = "col-lg-6">
+                                                <input type="checkbox"> Легендарное оружие
+                                            </div>
+                                            <div class = "col-lg-6">
+                                                <input type="checkbox"> Лоли
+                                            </div>
+                                        </div>
+                                        <div class = "row">
+                                            <div class = "col-lg-6">
+                                                <input type="checkbox"> Маг. оружие
+                                            </div>
+                                            <div class = "col-lg-6">
+                                                <input type="checkbox"> Магия
+                                            </div>
+                                        </div>
+                                        <div class = "row">
+                                            <div class = "col-lg-6">
+                                                <input type="checkbox"> Мафия
+                                            </div>
+                                            <div class = "col-lg-6">
+                                                <input type="checkbox"> Медицина
+                                            </div>
+                                        </div>
+                                        <div class = "row">
+                                            <div class = "col-lg-6">
+                                                <input type="checkbox"> Месть
+                                            </div>
+                                            <div class = "col-lg-6">
+                                                <input type="checkbox"> Монстродевушки
+                                            </div>
+                                        </div>
+                                        <div class = "row">
+                                            <div class = "col-lg-6">
+                                                <input type="checkbox"> Монстры
+                                            </div>
+                                            <div class = "col-lg-6">
+                                                <input type="checkbox"> Музыка
+                                            </div>
+                                        </div>
+                                        <div class = "row">
+                                            <div class = "col-lg-6">
+                                                <input type="checkbox"> Способности
+                                            </div>
+                                            <div class = "col-lg-6">
+                                                <input type="checkbox"> Насилие
+                                            </div>
+                                        </div>
+                                        <div class = "row">
+                                            <div class = "col-lg-6">
+                                                <input type="checkbox"> Наёмники
+                                            </div>
+                                            <div class = "col-lg-6">
+                                                <input type="checkbox"> Нежить
+                                            </div>
+                                        </div>
+                                        <div class = "row">
+                                            <div class = "col-lg-6">
+                                                <input type="checkbox"> Ниндзя
+                                            </div>
+                                            <div class = "col-lg-6">
+                                                <input type="checkbox"> Обмен телами
+                                            </div>
+                                        </div>
+                                        <div class = "row">
+                                            <div class = "col-lg-6">
+                                                <input type="checkbox"> Обратный Гарем
+                                            </div>
+                                            <div class = "col-lg-6">
+                                                <input type="checkbox"> Огнестрельное оружие
+                                            </div>
+                                        </div>
+                                        <div class = "row">
+                                            <div class = "col-lg-6">
+                                                <input type="checkbox"> Офис
+                                            </div>
+                                            <div class = "col-lg-6">
+                                                <input type="checkbox"> Пародия
+                                            </div>
+                                        </div>
+                                        <div class = "row">
+                                            <div class = "col-lg-6">
+                                                <input type="checkbox"> Пираты
+                                            </div>
+                                            <div class = "col-lg-6">
+                                                <input type="checkbox"> Подземелья
+                                            </div>
+                                        </div>
+                                        <div class = "row">
+                                            <div class = "col-lg-6">
+                                                <input type="checkbox"> Политика
+                                            </div>
+                                            <div class = "col-lg-6">
+                                                <input type="checkbox"> Полиция
+                                            </div>
+                                        </div>
+                                        <div class = "row">
+                                            <div class = "col-lg-6">
+                                                <input type="checkbox"> Преступники/криминал
+                                            </div>
+                                            <div class = "col-lg-6">
+                                                <input type="checkbox"> Призраки
+                                            </div>
+                                        </div>
+                                        <div class = "row">
+                                            <div class = "col-lg-6">
+                                                <input type="checkbox"> Путешествие во времени                                            </div>
+                                            <div class = "col-lg-6">
+                                                <input type="checkbox"> Рабы
+                                            </div>
+                                        </div>
+                                        <div class = "row">
+                                            <div class = "col-lg-6">
+                                                <input type="checkbox"> Разумные расы                                            </div>
+                                            <div class = "col-lg-6">
+                                                <input type="checkbox"> Ранги силы
+                                            </div>
+                                        </div>
+                                        <div class = "row">
+                                            <div class = "col-lg-6">
+                                                <input type="checkbox"> Реинкарнация                                            </div>
+                                            <div class = "col-lg-6">
+                                                <input type="checkbox"> Роботы
+                                            </div>
+                                        </div>
+                                        <div class = "row">
+                                            <div class = "col-lg-6">
+                                                <input type="checkbox"> Рыцари                                            </div>
+                                            <div class = "col-lg-6">
+                                                <input type="checkbox"> Самураи
+                                            </div>
+                                        </div>
+                                        <div class = "row">
+                                            <div class = "col-lg-6">
+                                                <input type="checkbox"> Система                                           </div>
+                                            <div class = "col-lg-6">
+                                                <input type="checkbox"> Скрытие личности
+                                            </div>
+                                        </div>
+                                        <div class = "row">
+                                            <div class = "col-lg-6">
+                                                <input type="checkbox"> Спасение мира                                          </div>
+                                            <div class = "col-lg-6">
+                                                <input type="checkbox"> Спортивное тело
+                                            </div>
+                                        </div>
+                                        <div class = "row">
+                                            <div class = "col-lg-6">
+                                                <input type="checkbox"> Средневековье                                          </div>
+                                            <div class = "col-lg-6">
+                                                <input type="checkbox"> Стипанк
+                                            </div>
+                                        </div>
+                                        <div class = "row">
+                                            <div class = "col-lg-6">
+                                                <input type="checkbox"> Супергерои                                         </div>
+                                            <div class = "col-lg-6">
+                                                <input type="checkbox"> Традиционные игры
+                                            </div>
+                                        </div>
+                                        <div class = "row">
+                                            <div class = "col-lg-6">
+                                                <input type="checkbox"> Умный ГГ                                         </div>
+                                            <div class = "col-lg-6">
+                                                <input type="checkbox"> Учитель / ученик
+                                            </div>
+                                        </div>
+                                        <div class = "row">
+                                            <div class = "col-lg-6">
+                                                <input type="checkbox"> Философия                                         </div>
+                                            <div class = "col-lg-6">
+                                                <input type="checkbox"> Хикимори
+                                            </div>
+                                        </div>
+                                        <div class = "row">
+                                            <div class = "col-lg-6">
+                                                <input type="checkbox"> Холодное оружие                                         </div>
+                                            <div class = "col-lg-6">
+                                                <input type="checkbox"> Шантаж
+                                            </div>
+                                        </div>
+                                        <div class = "row">
+                                            <div class = "col-lg-6">
+                                                <input type="checkbox"> Эльфы                                         </div>
+                                            <div class = "col-lg-6">
+                                                <input type="checkbox"> Якудза
+                                            </div>
+                                        </div>
+                                        <div class = "row">
+                                            <div class = "col-lg-6">
+                                                <input type="checkbox"> Яндере                                         </div>
+                                            <div class = "col-lg-6">
+                                                <input type="checkbox"> Япония
+                                            </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class = "row">
+                        <div class = "col-lg-6 mt-5">
+                            <label for="customRange1" class="form-label">Выберите год выпуска</label>
+                            <input type="range" class="form-range" id="customRange1" min="1998" max="2024" step="1" value="2010" oninput="updateValue(this.value)" list="tickmarks">
+                            <div class="range-value">Выбранный год: <span id="rangeValue">2010</span></div>
+                        </div>
+                        <div class = "col-lg-6 mt-5">
+                            <div class = "row bg-secondary">
+                                <div class = "col-lg-3">
+                                    <input type="checkbox"> PG
+                                </div>
+                                <div class = "col-lg-3">
+                                    <input type="checkbox"> PG-13
+                                </div>
+                                <div class = "col-lg-3">
+                                    <input type="checkbox"> R-17
+                                </div>
+                                <div class = "col-lg-3">
+                                    <input type="checkbox"> R+
+                                </div>
+                                <div class = "row">
+                                    <div class = "col-lg-12  bg-secondary text-center">
+                                        <button type="button" class="btn btn-light mt-1" style = "width: 250px;">Найти</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class = "row mt-3">
+                <div class = "col-lg-2 text-center element_left">
+                    <a href="http://127.0.0.1:8080/senen">
+                        <h2>Cёнены</h2>
+                    </a>
+                </div>
+            </div>
+            <div class = "row">
+                <div class = "col-lg-2 text-center element_left">
+                    <a href="http://127.0.0.1:8080/sousou-no-friren" class = "main_button">
+                        <img src="sousou-no-friren/friren.jpg" alt="friren">
+                        <span>Провожающая в последний путь Фрирен</span>
+                    </a>
+                </div>
+                <div class = "col-lg-2 text-center element_left">
+                    <a href="http://127.0.0.1:8080/atack-titan-1" class = "main_button">
+                        <img src="atack-titan-1/atack-titan-1.jpg" alt="atack-titan-1">
+                        <span>Атака титанов</span>
+                    </a>
+                </div>
+                <div class = "col-lg-2 text-center element_left">
+                    <a href="http://127.0.0.1:8080/mob-100-1" class = "main_button">
+                        <img src="mob-100-1/mob-100-1.jpg" alt="mob-100-1">
+                        <span>Моб психо 100</span>
+                    </a>
+                </div>
+                <div class = "col-lg-2 text-center element_left">
+                    <a href="http://127.0.0.1:8080/naruto" class = "main_button">
+                        <img src="naruto/naruto.jpg" alt="naruto">
+                        <span>Наруто</span>
+                    </a>
+                </div>
+                <div class = "col-lg-2 text-center element_left">
+                    <a href="http://127.0.0.1:8080/blich" class = "main_button">
+                        <img src="blich/blich.jpg" alt="blich">
+                        <span>Блич</span>
+                    </a>
+                </div>
+            </div>
+            <div class = "row mt-5">
+                <div class = "col-lg-2 text-center element_left">
+                    <a href="http://127.0.0.1:8080/mag-bitva" class = "main_button">
+                        <img src="mag-bitva/mag-bitva.jpg" alt="mag-bitva">
+                        <span>Магическая Битва</span>
+                    </a>
+                </div>
+                <div class = "col-lg-2 text-center element_left">
+                    <a href="http://127.0.0.1:8080/chelovek-benzopila" class = "main_button">
+                        <img src="chelovek-benzopila/chelovek-benzopila.jpg" alt="chelovek-benzopila">
+                        <span>Человек-бензопила</span>
+                    </a>
+                </div>
+                <div class = "col-lg-2 text-center element_left">
+                    <a href="http://127.0.0.1:8080/moya-geroyskaya-akademiya" class = "main_button">
+                        <img src="moya-geroyskaya-akademiya/moya-geroyskaya-akademiya.jpg" alt="moya-geroyskaya-akademiya">
+                        <span>Моя геройская академения</span>
+                    </a>
+                </div>
+                <div class = "col-lg-2 text-center element_left">
+                    <a href="http://127.0.0.1:8080/klinok-rassekayushiy-demonov" class = "main_button">
+                        <img src="klinok-rassekayushiy-demonov/klinok-rassekayushiy-demonov.jpg" alt="klinok-rassekayushiy-demonov">
+                        <span>Клинок рассекающий демонов</span>
+                    </a>
+                </div>
+                <div class = "col-lg-2 text-center element_left">
+                    <a href="http://127.0.0.1:8080/stalnoy-alhimik" class = "main_button">
+                        <img src="stalnoy-alhimik/stalnoy-alhimik.jpg" alt="stalnoy-alhimik">
+                        <span>Стальной алхимик</span>
+                    </a>
+                </div>
+            </div>
+            <div class = "row mt-5">
+                <div class = "col-lg-3 element_left">
+                    <a href="http://127.0.0.1:8080/komedii" style = "position:relative; left:25px;">
+                        <h2>Комедии</h2>
+                    </a>
+                </div>
+            </div>
+            <div class = "row">
+                <div class = "col-lg-2 text-center element_left">
+                    <a href="http://127.0.0.1:8080/cikl-istoriy-mezhsezone-i-sezon-monstrov" class = "main_button">
+                        <img src="cikl-istoriy-mezhsezone-i-sezon-monstrov/cikl-istoriy-mezhsezone-i-sezon-monstrov.jpg" alt="cikl-istoriy-mezhsezone-i-sezon-monstrov">
+                        <span>Цикл историй: Межсезонье и сезон монстров</span>
+                    </a>
+                </div>
+                <div class = "col-lg-2 text-center element_left">
+                    <a href="http://127.0.0.1:8080/polunochnyy-udar" class = "main_button">
+                        <img src="polunochnyy-udar/polunochnyy-udar.jpg" alt="polunochnyy-udar">
+                        <span>Полуночный удар</span>
+                    </a>
+                </div>
+                <div class = "col-lg-2 text-center element_left">
+                    <a href="http://127.0.0.1:8080/slichkom-mnogo-proigravshih-geroin" class = "main_button">
+                        <img src="slichkom-mnogo-proigravshih-geroin/slichkom-mnogo-proigravshih-geroin.jpg" alt="slichkom-mnogo-proigravshih-geroin">
+                        <span>Слишком много проигравших героинь!</span>
+                    </a>
+                </div>
+                <div class = "col-lg-2 text-center element_left">
+                    <a href="http://127.0.0.1:8080/ramennaya-ryzhego-kota" class = "main_button">
+                        <img src="ramennaya-ryzhego-kota/ramennaya-ryzhego-kota.jpg" alt="ramennaya-ryzhego-kota">
+                        <span>Раменная рыжего кота</span>
+                    </a>
+                </div>
+                <div class = "col-lg-2 text-center element_left">
+                    <a href="http://127.0.0.1:8080/lyudi-podzemelya" class = "main_button">
+                        <img src="lyudi-podzemelya/lyudi-podzemelya.jpg" alt="lyudi-podzemelya">
+                        <span>Люди подземелья</span>
+                    </a>
+                </div>
+            </div>
+            <div class = "row mt-5">
+                <div class = "col-lg-2 text-center element_left">
+                    <a href="http://127.0.0.1:8080/diskvalificirovan-po-zhizni" class = "main_button">
+                        <img src="diskvalificirovan-po-zhizni/diskvalificirovan-po-zhizni.jpg" alt="diskvalificirovan-po-zhizni">
+                        <span>Дисквалифицирован по жизни</span>
+                    </a>
+                </div>
+                <div class = "col-lg-2 text-center element_left">
+                    <a href="http://127.0.0.1:8080/zapisi-astro" class = "main_button">
+                        <img src="zapisi-astro/zapisi-astro.jpg" alt="zapisi-astro">
+                        <span>Записи "Астро"</span>
+                    </a>
+                </div>
+                <div class = "col-lg-2 text-center element_left">
+                    <a href="http://127.0.0.1:8080/basnya" class = "main_button">
+                        <img src="basnya/basnya.jpg" alt="basnya">
+                        <span>Басня</span>
+                    </a>
+                </div>
+                <div class = "col-lg-2 text-center element_left">
+                    <a href="http://127.0.0.1:8080/basnya/o-moem-pererozhdenii-v-sliz" class = "main_button">
+                        <img src="o-moem-pererozhdenii-v-sliz/o-moem-pererozhdenii-v-sliz.jpg" alt="o-moem-pererozhdenii-v-sliz">
+                        <span>О моем перерождении в слизь</span>
+                    </a>
+                </div>
+                <div class = "col-lg-2 text-center element_left">
+                    <a href="http://127.0.0.1:8080/defragmentaciya" class = "main_button">
+                        <img src="defragmentaciya/defragmentaciya.jpg" alt="defragmentaciya">
+                        <span>Дефрагментация</span>
+                    </a>
+                </div>
+            </div>
+        </main>
+        <script>
+            function updateValue(value) {
+                document.getElementById('rangeValue').innerText = value;
+            }
+    
+            // Обновить значение при загрузке страницы
+            document.addEventListener('DOMContentLoaded', function() {
+                updateValue(document.getElementById('customRange1').value);
+            });
+        </script>
+    </body>
+</html>
+    
