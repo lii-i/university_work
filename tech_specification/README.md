@@ -1,0 +1,1 @@
+ЭТО ДИРЕКТОРИЯ ДЛЯ tech specification

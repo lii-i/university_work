@@ -1,0 +1,59 @@
+header{
+    z-index: 1000;
+}
+.vertical-menu{
+    width: 66px;
+    top:42px;
+    height: 100vh;
+    font-size: 14px;
+}
+.poisk{
+    background: none;
+    border: 0cap;
+}
+.poisk img{
+    width: 100%; /* Занимать всю ширину кнопки */
+    height: 100%; /* Занимать всю высоту кнопки */
+    object-fit: cover; /* Масштабирование изображения для покрытия всей кнопки */
+}
+.menu_button{
+    position: relative;
+    right:5px;
+    background: none;
+    border: 0cap;
+}
+.text_menu{
+    position: relative;
+    right:5px;
+}
+main{
+    width: 93%;
+    top:60px;
+    left:30px;
+}
+.element_left{
+    position: relative;
+    left:66px;
+}
+.main_img {
+    width: 300px;
+    height: 450px;
+}
+.dop_img{
+    width: 100px;
+    height: 150px;
+}
+a img{
+    width: 100%; /* Занимать всю ширину кнопки */
+    height: 100%; /* Занимать всю высоту кнопки */
+    object-fit: cover; /* Масштабирование изображения для покрытия всей кнопки */
+}
+a span{
+    display: block;
+    font-size: 16px;
+}
+span {
+    white-space: nowrap; /* Запрещает перенос текста на новую строку */
+    overflow: hidden; /* Скрывает текст, который не помещается */
+    text-overflow: ellipsis; /* Добавляет многоточие в конце обрезанного текста */
+}

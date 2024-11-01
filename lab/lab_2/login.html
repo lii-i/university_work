@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Registration Form</title>
+  <style>
+    body {
+      font-family: sans-serif;
+    }
+
+    h1 {
+      text-align: center;
+      color: #666;
+    }
+
+    .container {
+      width: 550px;
+      margin: 20px auto;
+      padding-bottom: 80px;
+      box-shadow: 2px 2px 10px #b4b4b4;
+      background-image: url('https://sun9-12.userapi.com/impg/L7cZLAVU3rADK0mgRrzQlqh3gowOaNVyZzAMqg/ys0fcutX7SQ.jpg?size=320x240&quality=96&sign=88316325a70a16d72c9c8c772d583619&c_uniq_tag=aGWbbXU0cV4vn4F3gHj0Q33I3tHXiPZB2V-gCujUkLQ&type=album');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    form {
+      padding: 50px 30px;
+    }
+
+    label {
+      display: block;
+      margin-top: 10px;
+      padding: 5px 10px;
+      font-size: 15px;
+      font-weight: 600;
+      color: #4d4d4d;
+    }
+
+    input {
+      display: block;
+      width: 93%;
+      margin: auto;
+      padding: 13px;
+      border: none;
+      border-radius: 20px;
+      background: #ffffff;
+      opacity: 0.5;
+    }
+
+    input.submit {
+      width: 100%;
+      padding: 10px;
+      margin-top: 20px;
+      font-size: 17px;
+      font-weight: 700;
+      color: #ffffff;
+      opacity: 1;
+      background-color: #a07e80;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Registration Form</h1>
+  <div class="container">
+    <form class="contact-form" action="http://127.0.0.1:8080/login" method="post">
+      <label for="name">USERNAME</label>
+      <input type="text" id="name" name ="USERNAME" required>
+
+      <label for="email">E-MAIL</label>
+      <input type="email" id="email" name ="E-MAIL" required>
+
+      <label for="password">PASSWORD</label>
+      <input type="text" minlength="8" id="password" name ="PASSWORD" required>
+
+      <input class="submit" value="SIGN UP" type="submit" required>
+    </form>
+  </div>
+</body>
+
+</html>
